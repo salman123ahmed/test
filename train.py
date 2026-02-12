@@ -16,6 +16,10 @@ y = df["label"]
 model = LogisticRegression()
 model.fit(X, y)
 
+
+X.plot(X["feature1"], X["feature2"], c=y, cmap="viridis", marker="o", edgecolor="k")    
+y.plot(X["feature1"], X["feature2"], c=y, cmap="viridis", marker="o", edgecolor="k")
+
 # Save model
 with open("model.pkl", "wb") as f:
     pickle.dump(model, f)
