@@ -1,1 +1,4 @@
 /model.pkl
+# Ignore the model file
+/.env
+
