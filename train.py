@@ -30,3 +30,8 @@ print("Model trained and saved to model.pkl")
 print("Model trained and saved to model.pkl")
 print("Model trained and saved to model.pkl")
 
+
+
+print("alll the chages for teh testing the git hub actions")
+ 
+
