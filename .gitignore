@@ -1,4 +1,5 @@
 /model.pkl
 # Ignore the model file
 /.env
+/data/sample.csv
 
