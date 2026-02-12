@@ -1,3 +1,4 @@
+from matplotlib.pylab import matrix
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import pickle
@@ -20,6 +21,12 @@ model.fit(X, y)
 X.plot(X["feature1"], X["feature2"], c=y, cmap="viridis", marker="o", edgecolor="k")    
 y.plot(X["feature1"], X["feature2"], c=y, cmap="viridis", marker="o", edgecolor="k")
 
+
+
+ #confusion matrix
+from sklearn.metrics import confusion_matrix    
+y_pred = model.predict(X)
+cm = confusion_matrix(y, y_pred)
 # Save model
 with open("model.pkl", "wb") as f:
     pickle.dump(model, f)
